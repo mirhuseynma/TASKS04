@@ -105,14 +105,14 @@ for (int i = 0; i < list.Length; i++)
 Console.WriteLine($"{c} ededi listde {again} defe istifade olunub");
 #endregion
 
-//#region Verilmiş array-ı tərsinə çap edin.
-////Məsələn: [1, 2, 3, 4] → Çıxış: 4 3 2 1
-//int[] numay = [10, 20, 30, 40, 50, 60];
-//for(int i = numay.Length -1; i >=0; i--)
-//{
-//    Console.WriteLine(numay[i]);
-//}
-//#endregion
+#region Verilmiş array-ı tərsinə çap edin.
+//Məsələn: [1, 2, 3, 4] → Çıxış: 4 3 2 1
+int[] numay = [10, 20, 30, 40, 50, 60];
+for (int i = numay.Length - 1; i >= 0; i--)
+{
+    Console.WriteLine(numay[i]);
+}
+#endregion
 
 //#region Verilmiş massivin ən kiçik elementini çıxışa verən proqram yazın
 //int[] ary = [-10, 20, -30, 40, -50, 60];
@@ -125,3 +125,5 @@ Console.WriteLine($"{c} ededi listde {again} defe istifade olunub");
 //}
 //Console.WriteLine($"Listdeki en kicik {aryclone} ededidir.");
 //#endregion
+
+//Məsələn: [1, 2, 3, 4] → Çıxış: 4 3 2 1
