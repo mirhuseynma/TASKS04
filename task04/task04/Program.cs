@@ -6,7 +6,7 @@ for (int i = 0; i<num.Length; i++)
     total += num[i];
 
 }
-Console.WriteLine(total);
+Console.WriteLine($"Listdeki ededlerin cemi: {total}");
 #endregion
 
 #region Verilmiş int Arrayın ən böyük dəyərə sahib elementini tapın
@@ -24,7 +24,7 @@ for (int i = 0; i < art.Length; i++)
     //    minvalue = art[i];
     //}
 }
-Console.WriteLine(maxvalue);
+Console.WriteLine($"{maxvalue} listdeki en boyuk ededdir");
 //Console.WriteLine(minvalue);
 #endregion
 
