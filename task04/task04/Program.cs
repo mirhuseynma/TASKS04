@@ -12,27 +12,23 @@ Console.WriteLine($"Listdeki ededlerin cemi: {total}");
 #region Verilmiş int Arrayın ən böyük dəyərə sahib elementini tapın
 int[] art = [10, 20, 30, 40, 50, 9, 23, 52, 99];
 int maxvalue = art[0];
-//int minvalue = art[1];
+
 for (int i = 0; i < art.Length; i++)
 {
     if (maxvalue < art[i])
     {
         maxvalue = art[i];
     }
-    //if (minvalue > art[i])
-    //{
-    //    minvalue = art[i];
-    //}
+    
 }
 Console.WriteLine($"{maxvalue} listdeki en boyuk ededdir");
-//Console.WriteLine(minvalue);
 #endregion
 
-//#region Verilmiş Arrayın ilk və son elementlərinin cəmini tapın
-//int[] need = [29, 32, 455, 232, 1223,232,323,1];
-//int sum = need[0] + need[need.Length-1];
-//Console.WriteLine(sum);
-//#endregion
+#region Verilmiş Arrayın ilk və son elementlərinin cəmini tapın
+int[] need = [29, 32, 455, 232, 1223, 232, 323, 1];
+int sum = need[0] + need[need.Length - 1];
+Console.WriteLine(sum);
+#endregion
 
 //#region Verilmiş müsbət tam n ədədinin 2-nin qüvvəti olub-olmamasını tapın
 //int numa = 5;
