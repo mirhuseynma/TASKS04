@@ -30,23 +30,23 @@ int sum = need[0] + need[need.Length - 1];
 Console.WriteLine(sum);
 #endregion
 
-//#region Verilmiş müsbət tam n ədədinin 2-nin qüvvəti olub-olmamasını tapın
-//int numa = 5;
-//bool isPower = true;
-//while (numa>1)
-//{
-//    if (numa % 2 != 0)
-//        isPower = false;
-//        break;
-//    numa /= 2;
-//}
-//if (numa ==  1)
-//    Console.WriteLine($"{numa} ededi 2 nin quvvetidir");
-//else if(!isPower)
-//    Console.WriteLine($"{numa} ededi 2 nin quvveti deyil");
-//else
-//    Console.WriteLine($"{numa} ededi 2 nin quvvetidir");
-//#endregion
+#region Verilmiş müsbət tam n ədədinin 2-nin qüvvəti olub-olmamasını tapın
+int numa = 5;
+bool isPower = true;
+while (numa > 1)
+{
+    if (numa % 2 != 0)
+        isPower = false;
+    break;
+    numa /= 2;
+}
+if (numa == 1)
+    Console.WriteLine($"{numa} ededi 2 nin quvvetidir");
+else if (!isPower)
+    Console.WriteLine($"{numa} ededi 2 nin quvveti deyil");
+else
+    Console.WriteLine($"{numa} ededi 2 nin quvvetidir");
+#endregion
 
 //#region Verilmiş n tam ədədinin neçə mərtəbəli olduğunu tapın. Məs: 23452, output: 5
 //int n = 1;
