@@ -80,29 +80,30 @@ else if (!enter)
     Console.WriteLine("-1");
 #endregion
 
-//#region Tam ədədlər ardıcıllığı verilir. Ardıcıllığın hər bir mənfi olmayan elementini 2 vahid artırmalı.
-//int[] increase = [-10, 20, -30, 40, -50, 60];
-//for(int i = 0; i < increase.Length; i++)
-//{
-//    if (increase[i] > 0) { 
-//        increase[i] += 2;
-//    }
-//    Console.WriteLine(increase[i]);
-//}
-//#endregion
+#region Tam ədədlər ardıcıllığı verilir. Ardıcıllığın hər bir mənfi olmayan elementini 2 vahid artırmalı.
+int[] increase = [-10, 20, -30, 40, -50, 60];
+for (int i = 0; i < increase.Length; i++)
+{
+    if (increase[i] > 0)
+    {
+        increase[i] += 2;
+    }
+    Console.WriteLine(increase[i]);
+}
+#endregion
 
-//#region Verilmiş array-da müəyyən bir elementin neçə dəfə təkrarlandığını tapın.
-////Məsələn: [1, 2, 3, 2, 4, 2], axtarış: 2 → Çıxış: 3
-//int[] list = [29, 32, 455, 232, 1223, 232, 323, 1,232];
-//int c = 232;
-//int again = 0;
-//for(int i = 0; i < list.Length; i++)
-//{
-//    if (c == list[i]) 
-//        again++;
-//}
-//Console.WriteLine($"{c} ededi listde {again} defe istifade olunub");
-//#endregion
+#region Verilmiş array-da müəyyən bir elementin neçə dəfə təkrarlandığını tapın.
+//Məsələn: [1, 2, 3, 2, 4, 2], axtarış: 2 → Çıxış: 3
+int[] list = [29, 32, 455, 232, 1223, 232, 323, 1, 232];
+int c = 232;
+int again = 0;
+for (int i = 0; i < list.Length; i++)
+{
+    if (c == list[i])
+        again++;
+}
+Console.WriteLine($"{c} ededi listde {again} defe istifade olunub");
+#endregion
 
 //#region Verilmiş array-ı tərsinə çap edin.
 ////Məsələn: [1, 2, 3, 4] → Çıxış: 4 3 2 1
