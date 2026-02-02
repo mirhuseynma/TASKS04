@@ -48,37 +48,37 @@ else
     Console.WriteLine($"{numa} ededi 2 nin quvvetidir");
 #endregion
 
-//#region Verilmiş n tam ədədinin neçə mərtəbəli olduğunu tapın. Məs: 23452, output: 5
-//int n = 1;
-//int count = 0;
-//int nclone = n;
-//while (n > 0)
-//{
-//    n /= 10;
-//    count ++;
-//}
-//Console.WriteLine($"verilmis {nclone} ededi {count} mertebeden ibaretdir");
-//#endregion
+#region Verilmiş n tam ədədinin neçə mərtəbəli olduğunu tapın. Məs: 23452, output: 5
+int n = 1;
+int count = 0;
+int nclone = n;
+while (n > 0)
+{
+    n /= 10;
+    count++;
+}
+Console.WriteLine($"verilmis {nclone} ededi {count} mertebeden ibaretdir");
+#endregion
 
-//#region Verilmiş artan sıra ilə düzülmüş ədədlər siyahısındaki n ədədinin yerləşdiryi indexi tapan alqoritm
-////(meselen 50 axtaririq egər siyahıda 50 ədədi yoxdursa -1 print olsun, varsa var olduğu index)
-//int[] m = [10, 20, 30, 40, 50,60];
-//int a = 60;
-//int counta = 0;
-//bool enter = false;
-//for(int i = 0; i < m.Length; i++)
-//{
-//    if (a == m[i])
-//    {
-//        enter = true;
-//        counta += i;
-//    }       
-//}
-//if (enter)
-//    Console.WriteLine($"{a} ededi {counta} indeksinde yerlesir");
-//else if (!enter)
-//    Console.WriteLine($"{a} ededi siyahida yoxdur");
-//#endregion
+#region Verilmiş artan sıra ilə düzülmüş ədədlər siyahısındaki n ədədinin yerləşdiryi indexi tapan alqoritm
+//(meselen 50 axtaririq egər siyahıda 50 ədədi yoxdursa -1 print olsun, varsa var olduğu index)
+int[] m = [10, 20, 30, 40, 50, 60];
+int a = 60;
+int counta = 0;
+bool enter = false;
+for (int i = 0; i < m.Length; i++)
+{
+    if (a == m[i])
+    {
+        enter = true;
+        counta += i;
+    }
+}
+if (enter)
+    Console.WriteLine($"{a} ededi {counta} indeksinde yerlesir");
+else if (!enter)
+    Console.WriteLine("-1");
+#endregion
 
 //#region Tam ədədlər ardıcıllığı verilir. Ardıcıllığın hər bir mənfi olmayan elementini 2 vahid artırmalı.
 //int[] increase = [-10, 20, -30, 40, -50, 60];
