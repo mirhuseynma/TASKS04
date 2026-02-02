@@ -114,16 +114,14 @@ for (int i = numay.Length - 1; i >= 0; i--)
 }
 #endregion
 
-//#region Verilmiş massivin ən kiçik elementini çıxışa verən proqram yazın
-//int[] ary = [-10, 20, -30, 40, -50, 60];
-//int aryclone = ary[0];
-//for(int i = 0; i<ary.Length; i++)
-//{
-//    if (ary[i] < aryclone)
-//        aryclone = ary[i];
+#region Verilmiş massivin ən kiçik elementini çıxışa verən proqram yazın
+int[] ary = [-10, 20, -30, 40, -50, 60];
+int aryclone = ary[0];
+for (int i = 0; i < ary.Length; i++)
+{
+    if (ary[i] < aryclone)
+        aryclone = ary[i];
 
-//}
-//Console.WriteLine($"Listdeki en kicik {aryclone} ededidir.");
-//#endregion
-
-//Məsələn: [1, 2, 3, 4] → Çıxış: 4 3 2 1
+}
+Console.WriteLine($"Listdeki en kicik {aryclone} ededidir.");
+#endregion
