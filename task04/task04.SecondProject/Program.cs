@@ -3,13 +3,14 @@ using System.Runtime.ExceptionServices;
 
 int r = 15;
 long fakt = 1;
+int faktclone = fakt;
 for (int i = 1; i <= r; i++)
 {
     fakt *= i;
 }
-if (fakt == 0)
-    Console.WriteLine("0 ededinin faktoriali: 1");
-Console.WriteLine($"{r} ededinin faktoriali: {fakt}");
+if (r == 0)
+    Console.WriteLine($"{r}ededinin faktoriali: 1");
+Console.WriteLine($"{r} ededinin faktoriali: {faktclone}");
 #endregion
 
 #region Ədədlər massivindəki bütün elementləri faktorialına yüksəldin (məs: {5, 4, 6} -> {120, 24, 720 })
