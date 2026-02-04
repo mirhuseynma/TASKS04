@@ -1,4 +1,6 @@
 ﻿#region faktorial nece hesablanir
+using System.Runtime.ExceptionServices;
+
 int r = 15;
 long fakt = 1;
 for (int i = 1; i <= r; i++)
@@ -109,8 +111,7 @@ for (int i = 0; i < word.Length; i++)
     {
         again = now;
         wordagain = nowChar;
-    }
-        //Console.WriteLine($"{worda} stringinde '{wordagain}' 1 defe istifade olununb");
+    }       
 }
 Console.WriteLine($"en cox istifida edilen: {wordagain}, istifade edilib: {again} defe");
 #endregion
@@ -125,6 +126,110 @@ for(int i = name.Length - 1; i >= 0; i--)
 Console.WriteLine(nameters);
 #endregion
 
+#region Verilmiş yazılar siyahısında verilmiş hərfdən neçə ədəd olduğunu tapan proqram
+string words = "kertenkele";
+char wordain = 'k';
+int agin = 0;
+for (int i = 0; i < word.Length; i++)
+{
+      if (wordain == words[i])
+          agin++;    
+}
+if(agin == 0)
+    Console.WriteLine($"{wordain} verilmis stringde istifade olunmayib");
+else
+    Console.WriteLine($"'{wordain}' stringde {agin} defe istifade edilib");
+#endregion
+
+#region Verilmiş yazının əvvəlindəki boşluqlar silinmiş bir string düzəldən proqram
+string lastname = " Abdullazade";
+char lastchar = lastname[0];
+char boslug = ' ';
+string lastNameClone = default;
+if (lastchar == boslug)
+{
+    for (int j = 1; j < lastname.Length; j++)
+    {
+        lastNameClone += lastname[j];
+    }
+    Console.WriteLine(lastNameClone);
+}
+else
+{
+    Console.WriteLine(lastname);
+}
+#endregion
+
+#region Verilmiş 2 ədəd üzərində verilmiş simvola uyğun əməliyyat edən proqram. Simvol +,-,* və ya / olmalıdır, əks halda simvolu yenidən daxil edilməsi istənilməlidir.
+int numOne = 5;
+int numSecond = 6;
+char procces = '*';
+switch (procces)
+{
+    case '+':
+        Console.WriteLine(numOne+numSecond);
+        break;
+    case '-':
+        Console.WriteLine(numOne - numSecond);
+        break;
+    case '/':
+        Console.WriteLine(numOne / numSecond);
+        break;
+    case '*':
+        Console.WriteLine(numOne * numSecond);
+        break;
+    default:
+        Console.WriteLine("Simvolu duzgun secin: +, -, *, /");
+        break;
+}
+#endregion
+
+#region Verilmiş yazının içində A hərfinin olub olmadığını tapan proqram
+string lorem = "Akertenkele";
+char  emtptyLorem = 'A';
+bool  search = false;
+for (int i = 0; i < lorem.Length; i++)
+{
+    if (emtptyLorem == lorem[i])
+        search = true;
+    break;
+}
+if (!search)
+    Console.WriteLine($"{emtptyLorem} verilmis stringde istifade olunmayib");
+else
+    Console.WriteLine($"'{emtptyLorem}' stringde istifade edilib");
+#endregion
+
+#region Verilmiş müsbət cüt ədədi kradtarına yüksəldən proqram. Daxil edilən ədə musbət və cüt olmadıqca yenidən daxil edilməlidir
+int naturalNum = 5;
+if (naturalNum > 0 && naturalNum % 2 ==0)
+{
+    naturalNum *= naturalNum;
+    Console.WriteLine(naturalNum);
+}else if(naturalNum<0)
+    Console.WriteLine("eded musbet   olmalidir");
+else
+    Console.WriteLine("eded cut olmalidir");
+#endregion
+
+#region Verilmiş təhsil növü dəyərinə əsasən o təhsilin saatını göstərən proqram
+string educationType = "system";
+switch (educationType)
+{
+    case "programming":
+        Console.WriteLine("tehsil saati 400");
+        break;
+    case "dessign":
+        Console.WriteLine("tehsil saati 250");
+        break;
+    case "system":
+        Console.WriteLine("tehsil saati 200");
+        break;
+    default:
+        Console.WriteLine("Tehsil novunu duzgun secin");
+        break;
+}
+#endregion
 
 
 
